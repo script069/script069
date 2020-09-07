@@ -1,0 +1,4469 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <!-- Zeichencodierung, damit Umlaute und ähnliches korrekt dargestellt werden -->
+  <meta charset="utf-8">
+
+  <!-- Verwende die neueste, beim Benutzer, verfügbare InternetExplorer Version -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Angabe für Responsive Webdesigns, welche Größe zum Anfang geladen werden soll -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Der Canonical Tag zum vermeiden von doppelten Inhalt – wobei, da Kirby meine ich kein Problem mit haben sollte…-->
+  <link rel="canonical" href="/de" />
+  <!-- Titel der Seite, der im Browser-Tab/Fenster angezeigt wird und in der Regel der Titel in den Google Suchergebnissen ist -->
+      <title>SCRIPT</title>
+    <meta name="DC.Title" content="SCRIPT" />
+    <meta name="og:title" content="SCRIPT" />
+    <!-- Kurzbeschreibung der Webseite, die auch in der Google-Snippets erscheinen kann ( ca. 155 Zeichen) -->
+
+  <meta name="description" content="Script">
+  <meta name="DC.Description" content="Script">
+  <meta name="og:description" content="Script">
+  <meta itemprop="description" content="Script">
+  <meta itemprop="name" content="SCRIPT">
+
+  <meta name="copyright" content="© 2020 SCRIPT" />
+  <!--  Suchmaschinen mitteilen, dass die Seite indiziert und allen Links gefolgt werden soll -->
+  <meta name="robots" content="index,follow" />
+
+  <meta name="DC.Language" content="de_DE" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/de" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href="assets/builds/bundle.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+  </head>
+  <body class="theme--">
+
+<main role="main">
+            <article class="article cnt art--container theme-- " >
+  <section class="art--container__wrapper wrapper " >
+        <div class="art--container__holder holder grid">
+      <!-- Include the Modules if they exist! -->
+                        <div
+  data-module="ScriptContainer"   
+  class="
+    mod 
+    mod--script-container
+    script-container
+    theme-- 
+    grid-span--12 
+    grid-start--1 
+    window-height--12
+  " 
+  data-id="script-container_1586897751165_443">
+
+  <!-- Color Choose Area -->
+  <div class="mod--script-container__color-select__wrapper">
+    <button class="color-add">Farbe hinzufügen</button>
+  </div>
+
+  <!-- Color Overview Area -->
+  <div class="mod--script-container__color-overview__wrapper hidden"></div>
+
+  <!-- Input Area -->
+  <div class="mod--script-container__upload__wrapper hidden">
+    <input type="file" accept="image/png, image/jpeg" name="file-upload" id="mod--script-container__upload__input">
+  </div>
+
+  <div class="mod--script-container__image-crop__wrapper hidden">
+    <div class="mod--script-container__image-crop__holder"></div>
+    <button class="crop-button">Bild zuschneiden</button>
+  </div>
+
+  <!-- Report Area -->
+  <div class="mod--script-container__report hidden"></div>
+
+
+  <div class="mod--script-container__canvas--image">
+    <canvas height="0" id="canvas--image"></canvas>
+    <button class="mod--script-container__canvas--image__start-tick hidden">Start Tick</button>
+  </div>
+
+  <div class="mod--script-container__canvas--net">
+    <canvas height="0" id="canvas--net"></canvas>
+  </div>
+
+  <div class="mod--script-container__canvas--color">
+    <canvas height="0" id="canvas--color"></canvas>
+  </div>
+
+  <div class="mod--script-container__canvas--outline">
+    <canvas height="0" id="canvas--outline"></canvas>
+  </div>
+
+  <div class="mod--script-container__canvas--final">
+    <canvas height="0" id="canvas--final"></canvas>
+  </div>
+
+  <div class="mod--script-container__downloads"></div>
+  <script type="application/json" id="colors-json" charset="UTF-8">
+    {
+      "brands": [
+        {
+          "brand": "Montana Black",
+          "size": "400ml",
+          "colors": [
+            {
+              "color": {
+                "type": "RGB",
+                "r": 244,
+                "g": 229,
+                "b": 147
+              }, 
+              "title": "BLK 1005 Smash137's Potato"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 255,
+                "g": 230,
+                "b": 104
+              }, 
+              "title": "BLK 1010 Easter Yellow"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 255,
+                "g": 218,
+                "b": 21
+              }, 
+              "title": "BLK 1025 Kicking Yellow"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 252,
+                "g": 192,
+                "b": 0
+              }, 
+              "title": "BLK 1030 Yellow"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 245,
+                "g": 158,
+                "b": 1
+              }, 
+              "title": "BLK 1045 Melon Yellow"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 211,
+                "g": 126,
+                "b": 10
+              }, 
+              "title": "BLK 1050 Topaz"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 163,
+                "g": 76,
+                "b": 46
+              }, 
+              "title": "BLK 1060 Hazle"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 111,
+                "g": 47,
+                "b": 35
+              }, 
+              "title": "BLK 1070 Pecan Nut"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 97,
+                "g": 35,
+                "b": 22
+              }, 
+              "title": "BLK 1080 Maroon"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 224,
+                "g": 166,
+                "b": 0
+              }, 
+              "title": "BLK 1110 Indian Spice"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 182,
+                "g": 152,
+                "b": 34
+              }, 
+              "title": "BLK 1120 Masala"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 161,
+                "g": 129,
+                "b": 20
+              }, 
+              "title": "BLK 1130 Delhi"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 111,
+                "g": 89,
+                "b": 42
+              }, 
+              "title": "BLK 1140 Bombay"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 244,
+                "g": 159,
+                "b": 36
+              }, 
+              "title": "BLK 2060 Juice"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 239,
+                "g": 128,
+                "b": 13
+              }, 
+              "title": "BLK 2070 Clockwork Orange"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 234,
+                "g": 100,
+                "b": 12
+              }, 
+              "title": "BLK 2075 Pure Orange"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 232,
+                "g": 80,
+                "b": 17
+              }, 
+              "title": "BLK 2085 Halloween"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 227,
+                "g": 0,
+                "b": 27
+              }, 
+              "title": "BLK 2093 Code Red"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 240,
+                "g": 140,
+                "b": 72
+              }, 
+              "title": "BLK 2110 Tomorrow"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 235,
+                "g": 106,
+                "b": 39
+              }, 
+              "title": "BLK 2120 Atom´s Megablast"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 196,
+                "g": 9,
+                "b": 28
+              }, 
+              "title": "BLK 3020 Fire Rose"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 109,
+                "g": 8,
+                "b": 39
+              }, 
+              "title": "BLK 3062 Cardinal"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 63,
+                "g": 34,
+                "b": 36
+              }, 
+              "title": "BLK 3065 Merlot"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 51,
+                "g": 16,
+                "b": 40
+              }, 
+              "title": "BLK 3070 Cherry"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 81,
+                "g": 0,
+                "b": 41
+              }, 
+              "title": "BLK 3080 Winegum"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 245,
+                "g": 184,
+                "b": 197
+              }, 
+              "title": "BLK 3100 Miss Piggy"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 239,
+                "g": 142,
+                "b": 176
+              }, 
+              "title": "BLK 3120 Pink Cadillac"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 231,
+                "g": 71,
+                "b": 138
+              }, 
+              "title": "BLK 3130 Pink Panther"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 193,
+                "g": 0,
+                "b": 94
+              }, 
+              "title": "BLK 3145 Punk Pink"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 233,
+                "g": 65,
+                "b": 144
+              }, 
+              "title": "BLK 3148 Beast"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 170,
+                "g": 0,
+                "b": 115
+              }, 
+              "title": "BLK 3150 Freak"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 152,
+                "g": 21,
+                "b": 105
+              }, 
+              "title": "BLK 3155 Purple Rain"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 173,
+                "g": 15,
+                "b": 108
+              }, 
+              "title": "BLK 3160 Good Times"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 126,
+                "g": 21,
+                "b": 78
+              }, 
+              "title": "BLK 3170 Imperator"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 247,
+                "g": 192,
+                "b": 183
+              }, 
+              "title": "BLK 3200 Cocktail"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 242,
+                "g": 154,
+                "b": 132
+              }, 
+              "title": "BLK 3220 Mr. Crab"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 238,
+                "g": 131,
+                "b": 99
+              }, 
+              "title": "BLK 3240 Sushi"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 243,
+                "g": 167,
+                "b": 177
+              }, 
+              "title": "BLK 3305 Patpong"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 235,
+                "g": 114,
+                "b": 123
+              }, 
+              "title": "BLK 3310 Pink Lemonade"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 231,
+                "g": 73,
+                "b": 99
+              }, 
+              "title": "BLK 3320 Lollipop"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 186,
+                "g": 15,
+                "b": 62
+              }, 
+              "title": "BLK 3330 Bloody Mary"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 168,
+                "g": 67,
+                "b": 143
+              }, 
+              "title": "BLK 3920 Illusion"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 157,
+                "g": 25,
+                "b": 126
+              }, 
+              "title": "BLK 3940 Magic"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 197,
+                "g": 159,
+                "b": 198
+              }, 
+              "title": "BLK 3995 Bubble Bath"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 182,
+                "g": 143,
+                "b": 188
+              }, 
+              "title": "BLK 4000 Ms. Jackson"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 140,
+                "g": 74,
+                "b": 145
+              }, 
+              "title": "BLK 4020 Monster"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 109,
+                "g": 44,
+                "b": 126
+              }, 
+              "title": "BLK 4040 Pimp Violet"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 81,
+                "g": 27,
+                "b": 87
+              }, 
+              "title": "BLK 4060 Galaxy"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 177,
+                "g": 160,
+                "b": 202
+              }, 
+              "title": "BLK 4115 Lavender"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 169,
+                "g": 141,
+                "b": 189
+              }, 
+              "title": "BLK 4130 Blue Velvet"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 98,
+                "g": 87,
+                "b": 155
+              }, 
+              "title": "BLK 4155 Royal Purple"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 85,
+                "g": 65,
+                "b": 137
+              }, 
+              "title": "BLK 4160 Wizard"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 12,
+                "g": 9,
+                "b": 64
+              }, 
+              "title": "BLK 4182 Universe"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 170,
+                "g": 149,
+                "b": 156
+              }, 
+              "title": "BLK 4210 Gut"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 131,
+                "g": 105,
+                "b": 118
+              }, 
+              "title": "BLK 4230 Kidney"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 102,
+                "g": 75,
+                "b": 92
+              }, 
+              "title": "BLK 4250 Liver"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 219,
+                "g": 180,
+                "b": 198
+              }, 
+              "title": "BLK 4260 Dummy"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 152,
+                "g": 109,
+                "b": 129
+              }, 
+              "title": "BLK 4280 Plum"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 91,
+                "g": 44,
+                "b": 64
+              }, 
+              "title": "BLK 4290 Amethyst"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 205,
+                "g": 210,
+                "b": 219
+              }, 
+              "title": "BLK 4310 Edelgard"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 162,
+                "g": 176,
+                "b": 206
+              }, 
+              "title": "BLK 4320 Brunhilde"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 111,
+                "g": 137,
+                "b": 188
+              }, 
+              "title": "BLK 4330 Waltraut"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 77,
+                "g": 89,
+                "b": 154
+              }, 
+              "title": "BLK 4340 Irmgard"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 107,
+                "g": 200,
+                "b": 231
+              }, 
+              "title": "BLK 5020 Baby Blue"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 162,
+                "b": 211
+              }, 
+              "title": "BLK 5030 Light Blue"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 112,
+                "b": 184
+              }, 
+              "title": "BLK 5070 Horizon"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 5,
+                "g": 75,
+                "b": 144
+              }, 
+              "title": "BLK 5077 Royal Blue"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 50,
+                "b": 109
+              }, 
+              "title": "BLK 5080 Ultramarine"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 23,
+                "b": 58
+              }, 
+              "title": "BLK 5092 Dark Indigo"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 174,
+                "g": 194,
+                "b": 192
+              }, 
+              "title": "BLK 5125 Dove"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 82,
+                "g": 103,
+                "b": 108
+              }, 
+              "title": "BLK 5140 Seal"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 54,
+                "g": 73,
+                "b": 88
+              }, 
+              "title": "BLK 5160 Space"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 152,
+                "g": 176,
+                "b": 198
+              }, 
+              "title": "BLK 5180 Trout"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 87,
+                "g": 116,
+                "b": 146
+              }, 
+              "title": "BLK 5185 Marlin"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 38,
+                "g": 75,
+                "b": 104
+              }, 
+              "title": "BLK 5190 Whale"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 201,
+                "g": 224,
+                "b": 242
+              }, 
+              "title": "BLK 5200 Ice Blue"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 151,
+                "g": 196,
+                "b": 225
+              }, 
+              "title": "BLK 5210 Lenor"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 95,
+                "g": 151,
+                "b": 198
+              }, 
+              "title": "BLK 5230 Blue Lagoon"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 87,
+                "b": 158
+              }, 
+              "title": "BLK 5250 Knock Out Blue"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 36,
+                "g": 50,
+                "b": 125
+              }, 
+              "title": "BLK 5270 Sorrento Blue"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 227,
+                "g": 222,
+                "b": 42
+              }, 
+              "title": "BLK 6000 Pistachio"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 201,
+                "g": 210,
+                "b": 21
+              }, 
+              "title": "BLK 6005 Acid"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 169,
+                "g": 199,
+                "b": 7
+              }, 
+              "title": "BLK 6010 Slimer"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 161,
+                "g": 163,
+                "b": 36
+              }, 
+              "title": "BLK 6012 Oasis "
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 203,
+                "g": 213,
+                "b": 108
+              }, 
+              "title": "BLK 6013 Spring"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 181,
+                "g": 204,
+                "b": 34
+              }, 
+              "title": "BLK 6015 Wild Lime"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 81,
+                "g": 171,
+                "b": 39
+              }, 
+              "title": "BLK 6045 Irish Green"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 129,
+                "b": 50
+              }, 
+              "title": "BLK 6055 Boston"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 2,
+                "g": 90,
+                "b": 39
+              }, 
+              "title": "BLK 6060 Celtic"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 54,
+                "b": 19
+              }, 
+              "title": "BLK 6065 Banknote"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 60,
+                "b": 26
+              }, 
+              "title": "BLK 6070 TAG Green"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 40,
+                "g": 200,
+                "b": 66
+              }, 
+              "title": "BLK 6075 Hippie"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 41,
+                "g": 180,
+                "b": 25
+              }, 
+              "title": "BLK 6080 Mescaline"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 37,
+                "g": 144,
+                "b": 12
+              }, 
+              "title": "BLK 6090 Woodstock"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 117,
+                "b": 45
+              }, 
+              "title": "BLK 6095 Plant"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 145,
+                "g": 209,
+                "b": 218
+              }, 
+              "title": "BLK 6110 Tiffany"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 74,
+                "g": 173,
+                "b": 196
+              }, 
+              "title": "BLK 6130 Cool Cologne"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 134,
+                "b": 161
+              }, 
+              "title": "BLK 6150 Mermaid"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 1,
+                "g": 60,
+                "b": 74
+              }, 
+              "title": "BLK 6170 Neptune"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 42,
+                "b": 50
+              }, 
+              "title": "BLK 6175 Riffs"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 107,
+                "g": 219,
+                "b": 207
+              }, 
+              "title": "BLK 6180 Drops"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 61,
+                "g": 198,
+                "b": 172
+              }, 
+              "title": "BLK 6190 Nappies"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 12,
+                "g": 142,
+                "b": 118
+              }, 
+              "title": "BLK 6195 Surgery"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 154,
+                "g": 199,
+                "b": 118
+              }, 
+              "title": "BLK 6210 E2E Green"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 80,
+                "g": 174,
+                "b": 88
+              }, 
+              "title": "BLK 6220 Revolt Green"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 127,
+                "b": 100
+              }, 
+              "title": "BLK 6240 Atlantis"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 199,
+                "g": 219,
+                "b": 200
+              }, 
+              "title": "BLK 6310 Olymp"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 176,
+                "g": 215,
+                "b": 190
+              }, 
+              "title": "BLK 6320 Hope"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 100,
+                "g": 182,
+                "b": 153
+              }, 
+              "title": "BLK 6330 Patina"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 119,
+                "b": 100
+              }, 
+              "title": "BLK 6340 Copper Green"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 209,
+                "g": 213,
+                "b": 188
+              }, 
+              "title": "BLK 6410 Trabi"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 190,
+                "g": 198,
+                "b": 149
+              }, 
+              "title": "BLK 6420 Beetle"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 163,
+                "g": 172,
+                "b": 124
+              }, 
+              "title": "BLK 6430 Reseda"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 165,
+                "g": 178,
+                "b": 156
+              }, 
+              "title": "BLK 6510 Fog"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 119,
+                "g": 139,
+                "b": 123
+              }, 
+              "title": "BLK 6520 Mist"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 76,
+                "g": 96,
+                "b": 67
+              }, 
+              "title": "BLK 6530 Storm"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 209,
+                "g": 199,
+                "b": 130
+              }, 
+              "title": "BLK 6610 Bamboo"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 163,
+                "g": 144,
+                "b": 63
+              }, 
+              "title": "BLK 6620 Hemp"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 143,
+                "g": 133,
+                "b": 52
+              }, 
+              "title": "BLK 6625 Boa"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 122,
+                "g": 90,
+                "b": 57
+              }, 
+              "title": "BLK 6630 Pan"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 186,
+                "g": 181,
+                "b": 38
+              }, 
+              "title": "BLK 6710 Pear Green"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 113,
+                "g": 132,
+                "b": 40
+              }, 
+              "title": "BLK 6720 Lost Island"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 86,
+                "g": 91,
+                "b": 33
+              }, 
+              "title": "BLK 6725 Troops"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 40,
+                "g": 64,
+                "b": 28
+              }, 
+              "title": "BLK 6730 Toad"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 214,
+                "g": 209,
+                "b": 175
+              }, 
+              "title": "BLK 6905 Face"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 162,
+                "g": 166,
+                "b": 130
+              }, 
+              "title": "BLK 6910 Hannibal"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 128,
+                "g": 132,
+                "b": 96
+              }, 
+              "title": "BLK 6920 Murdock"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 63,
+                "g": 62,
+                "b": 42
+              }, 
+              "title": "BLK 6930 B.A Bosko"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 238,
+                "g": 241,
+                "b": 230
+              }, 
+              "title": "BLK 7010 Jaws"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 199,
+                "g": 200,
+                "b": 184
+              }, 
+              "title": "BLK 7030 Mouse"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 153,
+                "g": 154,
+                "b": 146
+              }, 
+              "title": "BLK 7050 Shark"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 94,
+                "g": 100,
+                "b": 96
+              }, 
+              "title": "BLK 7070 Rhino"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 72,
+                "g": 64,
+                "b": 61
+              }, 
+              "title": "BLK 7080 Ant"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 199,
+                "g": 187,
+                "b": 168
+              }, 
+              "title": "BLK 7110 Gambetta"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 157,
+                "g": 146,
+                "b": 131
+              }, 
+              "title": "BLK 7120 Lennox"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 125,
+                "g": 114,
+                "b": 104
+              }, 
+              "title": "BLK 7130 Lambrate"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 82,
+                "g": 64,
+                "b": 56
+              }, 
+              "title": "BLK 7140 Industriilor"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 166,
+                "g": 159,
+                "b": 162
+              }, 
+              "title": "BLK 7210 Houdini"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 132,
+                "g": 124,
+                "b": 130
+              }, 
+              "title": "BLK 7220 Morpheus"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 87,
+                "g": 81,
+                "b": 90
+              }, 
+              "title": "BLK 7230 Nostradamus"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 168,
+                "g": 158,
+                "b": 159
+              }, 
+              "title": "BLK 7320 Ghetto"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 100,
+                "g": 91,
+                "b": 92
+              }, 
+              "title": "BLK 7340 Dumbo"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 53,
+                "g": 44,
+                "b": 45
+              }, 
+              "title": "BLK 7360 Slate"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 242,
+                "g": 232,
+                "b": 196
+              }, 
+              "title": "BLK 8000 Ivory"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 184,
+                "g": 146,
+                "b": 71
+              }, 
+              "title": "BLK 8010 Sand"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 217,
+                "g": 185,
+                "b": 128
+              }, 
+              "title": "BLK 8020 Beige"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 218,
+                "g": 172,
+                "b": 146
+              }, 
+              "title": "BLK 8030 Iced Coffe"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 203,
+                "g": 145,
+                "b": 108
+              }, 
+              "title": "BLK 8040 Cremino"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 178,
+                "g": 122,
+                "b": 89
+              }, 
+              "title": "BLK 8050 Frappé"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 124,
+                "g": 80,
+                "b": 53
+              }, 
+              "title": "BLK 8060 Chocolate"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 73,
+                "g": 32,
+                "b": 26
+              }, 
+              "title": "BLK 8070 Jawa"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 144,
+                "g": 44,
+                "b": 46
+              }, 
+              "title": "BLK 8080 Rust"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 194,
+                "g": 168,
+                "b": 117
+              }, 
+              "title": "BLK 8110 Arabian"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 171,
+                "g": 146,
+                "b": 105
+              }, 
+              "title": "BLK 8120 Gobi"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 144,
+                "g": 117,
+                "b": 79
+              }, 
+              "title": "BLK 8130 Syrian"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 159,
+                "g": 107,
+                "b": 90
+              }, 
+              "title": "BLK 8210 After"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 245,
+                "g": 172,
+                "b": 140
+              }, 
+              "title": "BLK 8220 Snail"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 223,
+                "g": 81,
+                "b": 5
+              }, 
+              "title": "BLK 8230 Koi"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 185,
+                "g": 71,
+                "b": 9
+              }, 
+              "title": "BLK 8240 Falling"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 91,
+                "g": 38,
+                "b": 7
+              }, 
+              "title": "BLK 8250 Candy Bar"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 81,
+                "g": 35,
+                "b": 32
+              }, 
+              "title": "BLK 8260 Mud"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 3,
+                "g": 5,
+                "b": 6
+              }, 
+              "title": "BLK 9001 Black"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 255,
+                "g": 255,
+                "b": 255
+              }, 
+              "title": "BLK 9100 Snow White"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 251,
+                "g": 252,
+                "b": 246
+              }, 
+              "title": "BLK 9105 White"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 249,
+                "g": 233,
+                "b": 0
+              }, 
+              "title": "BLK TR 1000 True Yellow"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 255,
+                "g": 245,
+                "b": 98
+              }, 
+              "title": "BLK TR 1010 True Yel. 50%"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 229,
+                "g": 17,
+                "b": 117
+              }, 
+              "title": "BLK TR 4000 True Magenta"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 231,
+                "g": 93,
+                "b": 152
+              }, 
+              "title": "BLK TR 4010 True Mag. 50%"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 184,
+                "b": 210
+              }, 
+              "title": "BLK TR 5000 True Cyan"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 134,
+                "g": 206,
+                "b": 220
+              }, 
+              "title": "BLK TR 5010 True Cyan 50%"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 255,
+                "g": 223,
+                "b": 0
+              }, 
+              "title": "P1000 Power Yellow"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 255,
+                "g": 90,
+                "b": 16
+              }, 
+              "title": "P2000 Power Orange"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 226,
+                "g": 34,
+                "b": 24
+              }, 
+              "title": "P3000 Power Red"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 230,
+                "g": 70,
+                "b": 144
+              }, 
+              "title": "P4000 Power Pink"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 24,
+                "g": 34,
+                "b": 91
+              }, 
+              "title": "P4100 Power Violet"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 0,
+                "g": 84,
+                "b": 157
+              }, 
+              "title": "P5000 Power Blue"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 103,
+                "g": 176,
+                "b": 40
+              }, 
+              "title": "P6000 Power Green"
+            }
+          ]
+        },
+        {
+          "brand": "Montana Hardcore",
+          "size": "400ml",
+          "colors": [
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FFFFBF"
+              },
+              "title": "RV-252 Unicorn Yellow"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FFF386"
+              }, 
+              "title": "RV-222 Beach Yellow"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#fff7b6"
+              }, 
+              "title": "RV-7 Cream"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FFF048"
+              }, 
+              "title": "RV-20 Party Yellow"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FFE100"
+              }, 
+              "title": "RV-1021 Light Yellow"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FAB700"
+              }, 
+              "title": "RV-239 Luxor Yellow"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#C8A10A"
+              }, 
+              "title": "RV-11 Ganges Yellow"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FBCB8C"
+              }, 
+              "title": "RV-206 Atacama Yellow"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#F9BA57"
+              }, 
+              "title": "RV-1017 Peach"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#F6A800"
+              }, 
+              "title": "RV-1028 Medium Yellow"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#E77A19"
+              }, 
+              "title": "RV-207 Mango"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#B9501A"
+              }, 
+              "title": "RV-8023 Mustard"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#933B00"
+              }, 
+              "title": "RV-261 Pangea Brown"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#6D2601"
+              }, 
+              "title": "RV-18 Rust Red"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FAC294"
+              }, 
+              "title": "RV-9 Apricot"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#F6AD6B"
+              }, 
+              "title": "RV-208 Pumpkin"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#EC753B"
+              }, 
+              "title": "RV-2003 Pastel Orange"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#E95E0F"
+              }, 
+              "title": "RV-2004 Orange"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#DC4126"
+              }, 
+              "title": "RV-209 Calcutta Orange"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#910e14"
+              }, 
+              "title": "RV-210 Prometheus Orange"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#5E0000"
+              }, 
+              "title": "RV-260 Iroko Red"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FF958E"
+              }, 
+              "title": "RV-259 Flamingo"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#E74F45"
+              }, 
+              "title": "RV-33 Colorado Red"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#E5352D"
+              }, 
+              "title": "RV-3020 Light Red"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#C90019"
+              }, 
+              "title": "RV-3001 Vivid Red"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#C52332"
+              }, 
+              "title": "RV-241 Madrid Red"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#8d0000"
+              }, 
+              "title": "RV-242 Soviet Red"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#82131D"
+              }, 
+              "title": "RV-3004 Bordeaux Red"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#F4ADC5"
+              }, 
+              "title": "RV- 348 Alice Pink"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FFA2CA"
+              }, 
+              "title": "RV-258 Manga Pink"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#EE87AD"
+              }, 
+              "title": "RV-211 Love Pink"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#DE336B"
+              }, 
+              "title": "RV-4003 Erika"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#DD1D5A"
+              }, 
+              "title": "RV-4010 Magenta"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#C50041"
+              }, 
+              "title": "RV-212 Akari Red"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#762A3D"
+              }, 
+              "title": "RV-213 Merlot Red"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#F6B8D0"
+              }, 
+              "title": "RV-349 Violet Treze"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#CA87B6"
+              }, 
+              "title": "RV-257 Princess Violet"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#C8739F"
+              }, 
+              "title": "RV-224 Witch Violet"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#C15C92"
+              }, 
+              "title": "RV-225 Geisha Violet"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#8F154B"
+              }, 
+              "title": "RV-350 Pure Purple"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#7C3F60"
+              }, 
+              "title": "RV-226 Tube Violet"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#582741"
+              }, 
+              "title": "RV-4007 Cherry"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#ACA6D1"
+              }, 
+              "title": "RV-256 Malva"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#9993C3"
+              }, 
+              "title": "RV-214 Violet"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#6D63A5"
+              }, 
+              "title": "RV-215 Prophet Violet"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#574A96"
+              }, 
+              "title": "RV-3  Blue Violet"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#45347A"
+              }, 
+              "title": "RV-216 Anonymous Violet"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#2F2280"
+              }, 
+              "title": "RV-264 Galaxy Violet"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#00084D"
+              }, 
+              "title": "RV-27 Vampire Violet"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#C8D3ED"
+              }, 
+              "title": "RV-73 Aurora Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#889ed1"
+              }, 
+              "title": "RV-351 Hortensia Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#5d78ba"
+              }, 
+              "title": "RV-352 Gala Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#40549f"
+              }, 
+              "title": "RV-353 Julione Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#3D5588"
+              }, 
+              "title": "RV-243 Babylon Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#213a8f"
+              }, 
+              "title": "RV-32 Lewis Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#0F2354"
+              }, 
+              "title": "RV-354 Universe Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#94BFE5"
+              }, 
+              "title": "RV-74 Costa Brava Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#6F9FD0"
+              }, 
+              "title": "RV-227 Waimea Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#4875B3"
+              }, 
+              "title": "RV-228 Zeppelin Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#465499"
+              }, 
+              "title": "RV-229 Andromeda Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#37306A"
+              }, 
+              "title": "RV-5002 Ultramarine Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#0D0F49"
+              }, 
+              "title": "RV-230 Leviathan Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#020E37"
+              }, 
+              "title": "RV-75 Nostromo Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#97e6ff"
+              }, 
+              "title": "RV-13 Himalayan Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#6BDCFF"
+              }, 
+              "title": "RV-29 Arctic Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#60C5E7"
+              }, 
+              "title": "RV-8 Light  Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#00A2DD"
+              }, 
+              "title": "RV-217 Avatar Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#007FC4"
+              }, 
+              "title": "RV-30 Electric Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#00659D"
+              }, 
+              "title": "RV-5005 Dark Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#004578"
+              }, 
+              "title": "RV-218 Neptune Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#8ECFD3"
+              }, 
+              "title": "RV-355 Fukushima Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#83CCDF"
+              }, 
+              "title": "RV-255 Patagonia Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#1BB2C4"
+              }, 
+              "title": "RV-231 Cousteau Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#009CAB"
+              }, 
+              "title": "RV-232 Glacier Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#008098"
+              }, 
+              "title": "RV-14 Planet Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#006675"
+              }, 
+              "title": "RV-233 Christiania Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#004750"
+              }, 
+              "title": "RV-234 Indigo Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#97D2D0"
+              }, 
+              "title": "RV-356 Vintage Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#6EC3BF"
+              }, 
+              "title": "RV-357 Iceberg Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#60B3AC"
+              }, 
+              "title": "RV-358 Water Lily Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#008C8D"
+              }, 
+              "title": "RV-359 Mururoa Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#007F80"
+              }, 
+              "title": "RV- 5021 Caribbean Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#1F6363"
+              }, 
+              "title": "RV-360 Major Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#00454E"
+              }, 
+              "title": "RV-5020 Ocean Blue"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#C5EFDA"
+              }, 
+              "title": "RV-361 Potosi Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#9FE5C2"
+              }, 
+              "title": "RV-254 Max Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#8BC8AA"
+              }, 
+              "title": "RV-219 Paris Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#5BB89E"
+              }, 
+              "title": "RV-220 UFO Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#009473"
+              }, 
+              "title": "RV-21 Surgical Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#008352"
+              }, 
+              "title": "RV-6016 Dark Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#005231"
+              }, 
+              "title": "RV-221 Persephone Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#9CCD9A"
+              }, 
+              "title": "RV-24 Golden Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#74B957"
+              }, 
+              "title": "RV-4 Light Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#88B14F"
+              }, 
+              "title": "RV-34 Guacamole Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#6A9720"
+              }, 
+              "title": "RV-6018 Valley Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#6A8515"
+              }, 
+              "title": "RV-237 Cologno N. Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#005900"
+              }, 
+              "title": "RV-5 Lutecia Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#0F2405"
+              }, 
+              "title": "RV-6009 Amazonas Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#DEDD3A"
+              }, 
+              "title": "RV-235 Poison Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#CED50A"
+              }, 
+              "title": "RV-236 Mojito Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#B0C643"
+              }, 
+              "title": "RV-16 Pistachio Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#78BE7A"
+              }, 
+              "title": "RV-362  Mantis Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#00964F"
+              }, 
+              "title": "RV-363 Natura Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#006942"
+              }, 
+              "title": "RV-364 Reggae Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#CCE0AC"
+              }, 
+              "title": "RV-6019 Pale Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#C5CC8F"
+              }, 
+              "title": "RV-253 Element Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#ACB681"
+              }, 
+              "title": "RV-15 Apple Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#8F995B"
+              }, 
+              "title": "RV-250 Rambo Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#727E48"
+              }, 
+              "title": "RV-6013 Khaki Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#60683D"
+              }, 
+              "title": "RV-6003 Olive Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#46502C"
+              }, 
+              "title": "RV-251 Forest Green"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#EECF99"
+              }, 
+              "title": "RV-246 Druide Brown"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#DEB276"
+              }, 
+              "title": "RV-247 Tepuy Brown"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#CC9456"
+              }, 
+              "title": "RV-248 Baobab Brown"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#B0763F"
+              }, 
+              "title": "RV-249 Greyound Brown"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#8A5531"
+              }, 
+              "title": "RV-8002 Toasted Brown"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#402009"
+              }, 
+              "title": "RV-8017 Tobacco Brown"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#4D2200"
+              }, 
+              "title": "RV-35 Chocolate Brown"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#F9F7EA"
+              }, 
+              "title": "RV-365 Puchineli White"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#F3EFD6"
+              }, 
+              "title": "RV-1013 Bone white"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#EBE6D6"
+              }, 
+              "title": "RV-55 Arkalis Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#CABDB0"
+              }, 
+              "title": "RV-57 City Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#B7A794"
+              }, 
+              "title": "RV-42 Regina Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#928782"
+              }, 
+              "title": "RV-40 Nazgul Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#7E7F82"
+              }, 
+              "title": "RV-39 Ripley Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#e1e2e2"
+              }, 
+              "title": "RV-6 Light Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#C4C5C6"
+              }, 
+              "title": "RV-366 Squatter Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#7b7b7b"
+              }, 
+              "title": "RV-262 Matter Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#7B7C7E"
+              }, 
+              "title": "R-7040 Pearl Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#616264"
+              }, 
+              "title": "RV-7031 Dark Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#575757"
+              }, 
+              "title": "RV-263 Sputnik Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#464648"
+              }, 
+              "title": "RV-7016 Anthracite Grey"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FFFFFF"
+              }, 
+              "title": "RV-9010 Divinity White"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FFFFFF"
+              }, 
+              "title": "in White"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#FFFFFF"
+              }, 
+              "title": "te White"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#000000"
+              }, 
+              "title": "in Black"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#000000"
+              }, 
+              "title": "te Black"
+            },
+            {
+              "color": {
+                "type": "HEX",
+                "value": "#000000"
+              }, 
+              "title": "RV-9011 Gloss Black"
+            }
+          ]
+        },
+        {
+          "brand": "Loop",
+          "size": "400ml",
+          "colors": [
+            {
+              "color": {
+                "type": "RGB",
+                "r": 255,
+                "g": 255,
+                "b": 255
+              },
+              "title": "LP-100 WHITE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 255,
+                "g": 255,
+                "b": 255
+              },
+              "title": "LP-101 GLOSS WHITE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 35,
+                "g": 33,
+                "b": 36
+              },
+              "title": "LP-103 BLACK MATT"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 26,
+                "g": 23,
+                "b": 27
+              },
+              "title": "LP-104 BLACK"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "title": "LP-105 BLACK GLOSS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 251,
+                "g": 241,
+                "b": 147
+              },
+              "title": "LP-106 MADRID"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 25,
+                "g": 236,
+                "b": 101
+              },
+              "title": "LP-107 BARCELONA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 255,
+                "g": 221,
+                "b": 0
+              },
+              "title": "LP-108 VALENCIA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 253,
+                "g": 206,
+                "b": 7
+              },
+              "title": "LP-109 SEVILLA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 249,
+                "g": 179,
+                "b": 0
+              },
+              "title": "LP-110 MALAGA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 243,
+                "g": 153,
+                "b": 27
+              },
+              "title": "LP-120 AMSTERDAM"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 231,
+                "g": 128,
+                "b": 16
+              },
+              "title": "LP-121 HAARLEM"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 236,
+                "g": 111,
+                "b": 7
+              },
+              "title": "LP-122 UTRECHT"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 187,
+                "g": 73,
+                "b": 20
+              },
+              "title": "LP-123 ROTTERDAM"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 254,
+                "g": 220,
+                "b": 163
+              },
+              "title": "LP-124 EINDHOVEN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 248,
+                "g": 177,
+                "b": 76
+              },
+              "title": "LP-125 BREDA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 242,
+                "g": 146,
+                "b": 31
+              },
+              "title": "LP-126 HELMOND"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 235,
+                "g": 109,
+                "b": 15
+              },
+              "title": "LP-127 ROSENDHAL"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 231,
+                "g": 88,
+                "b": 217
+              },
+              "title": "LP-128 ARNHEM"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 224,
+                "g": 77,
+                "b": 20
+              },
+              "title": "LP-129 TILBURG"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 226,
+                "g": 68,
+                "b": 21
+              },
+              "title": "LP-130 OSS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 255,
+                "g": 51,
+                "b": 0
+              },
+              "title": "LP-131 BRUSSELS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 227,
+                "g": 54,
+                "b": 23
+              },
+              "title": "LP-136 MANCHESTER"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 221,
+                "g": 49,
+                "b": 24
+              },
+              "title": "LP-137 LIVERPOOL"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 190,
+                "g": 44,
+                "b": 28
+              },
+              "title": "LP-138 NEWCASTLE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 166,
+                "g": 36,
+                "b": 28
+              },
+              "title": "LP-139 YORK"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 123,
+                "g": 20,
+                "b": 23
+              },
+              "title": "LP-140 LEEDS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 78,
+                "g": 15,
+                "b": 15
+              },
+              "title": "LP-141 CAMBRIDGE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 232,
+                "g": 88,
+                "b": 109
+              },
+              "title": "LP-142 DERBY"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 229,
+                "g": 48,
+                "b": 73
+              },
+              "title": "LP-143 BRISTOL"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 218,
+                "g": 5,
+                "b": 49
+              },
+              "title": "LP-144 BRIGHTON"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 150,
+                "g": 48,
+                "b": 52
+              },
+              "title": "LP-145 OXFORD"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 51,
+                "g": 0,
+                "b": 0
+              },
+              "title": "LP-146 LONDON"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 255,
+                "g": 102,
+                "b": 153
+              },
+              "title": "LP-147 BIRMINGHAM"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 239,
+                "g": 124,
+                "b": 113
+              },
+              "title": "LP-148 NOTTINGHAM"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 181,
+                "g": 1,
+                "b": 86
+              },
+              "title": "LP-149 WARSAW"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 250,
+                "g": 237,
+                "b": 226
+              },
+              "title": "LP-150 DUBLIN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 245,
+                "g": 185,
+                "b": 166
+              },
+              "title": "LP-151 GALWAY"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 238,
+                "g": 132,
+                "b": 127
+              },
+              "title": "LP-152 DUNDALK"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 189,
+                "g": 65,
+                "b": 64
+              },
+              "title": "LP-153 WATERFORD"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 248,
+                "g": 203,
+                "b": 205
+              },
+              "title": "LP-154 LIMERICK"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 231,
+                "g": 164,
+                "b": 169
+              },
+              "title": "LP-155 SWORDS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 143,
+                "g": 68,
+                "b": 60
+              },
+              "title": "LP-156 CORK"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 204,
+                "g": 114,
+                "b": 124
+              },
+              "title": "LP-157 SLIGO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 224,
+                "g": 178,
+                "b": 193
+              },
+              "title": "LP-158 FARO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 240,
+                "g": 149,
+                "b": 167
+              },
+              "title": "LP-159 BEJA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 232,
+                "g": 90,
+                "b": 130
+              },
+              "title": "LP-160 COIMBRA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 198,
+                "g": 61,
+                "b": 101
+              },
+              "title": "LP-161 PORTO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 158,
+                "g": 23,
+                "b": 79
+              },
+              "title": "LP-162 AMADORA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 136,
+                "g": 7,
+                "b": 47
+              },
+              "title": "LP-163 LISBOA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 103,
+                "g": 1,
+                "b": 52
+              },
+              "title": "LP-164 THESSALONIKI"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 206,
+                "g": 204,
+                "b": 227
+              },
+              "title": "LP-180 VILNIUS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 201,
+                "g": 167,
+                "b": 203
+              },
+              "title": "LP-181 KALMAR"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 173,
+                "g": 131,
+                "b": 175
+              },
+              "title": "LP-182 MALMO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 139,
+                "g": 93,
+                "b": 142
+              },
+              "title": "LP-183 GOTEBORG"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 89,
+                "g": 24,
+                "b": 97
+              },
+              "title": "LP-184 MORA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 50,
+                "g": 9,
+                "b": 57
+              },
+              "title": "LP-185 FALUN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 239,
+                "g": 209,
+                "b": 207
+              },
+              "title": "LP-186 STOCKHOLM"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 236,
+                "g": 192,
+                "b": 190
+              },
+              "title": "LP-187 HELSINKI"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 215,
+                "g": 138,
+                "b": 140
+              },
+              "title": "LP-188 OULU"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 171,
+                "g": 82,
+                "b": 101
+              },
+              "title": "LP-189 OSLO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 91,
+                "g": 14,
+                "b": 69
+              },
+              "title": "LP-190 COPENHAGEN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 109,
+                "g": 44,
+                "b": 117
+              },
+              "title": "LP-191 MOSS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 96,
+                "g": 13,
+                "b": 32
+              },
+              "title": "LP-192 SKAGEN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 98,
+                "g": 32,
+                "b": 84
+              },
+              "title": "LP-193 RIGA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 51,
+                "g": 0,
+                "b": 62
+              },
+              "title": "LP-194 TALLINN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 147,
+                "g": 213,
+                "b": 245
+              },
+              "title": "LP-199 MONACO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 206,
+                "g": 230,
+                "b": 236
+              },
+              "title": "LP-200 PARIS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 164,
+                "g": 202,
+                "b": 217
+              },
+              "title": "LP-201 NANCY"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 124,
+                "g": 179,
+                "b": 205
+              },
+              "title": "LP-202 STRASBOURG"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 62,
+                "g": 142,
+                "b": 183
+              },
+              "title": "LP-203 METS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 30,
+                "g": 116,
+                "b": 167
+              },
+              "title": "LP-204 LENS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 0,
+                "g": 74,
+                "b": 124
+              },
+              "title": "LP-205 LILLE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 0,
+                "g": 51,
+                "b": 97
+              },
+              "title": "LP-206 RENNES"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 20,
+                "g": 39,
+                "b": 84
+              },
+              "title": "LP-207 CALAIS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 14,
+                "g": 26,
+                "b": 69
+              },
+              "title": "LP-208 BREST"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 185,
+                "g": 206,
+                "b": 214
+              },
+              "title": "LP-209 BORDEAUX"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 119,
+                "g": 165,
+                "b": 191
+              },
+              "title": "LP-210 NANTES"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 81,
+                "g": 136,
+                "b": 164
+              },
+              "title": "LP-211 GRENOBLES"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 0,
+                "g": 72,
+                "b": 104
+              },
+              "title": "LP-212 LYON"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 201,
+                "g": 219,
+                "b": 233
+              },
+              "title": "LP-213 MARSEILLE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 177,
+                "g": 196,
+                "b": 212
+              },
+              "title": "LP-214 NIMES"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 124,
+                "g": 151,
+                "b": 180
+              },
+              "title": "LP-215 MONPELLIER"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 79,
+                "g": 109,
+                "b": 145
+              },
+              "title": "LP-216 TOULOUSE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 14,
+                "g": 45,
+                "b": 82
+              },
+              "title": "LP-217 NICE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 31,
+                "g": 42,
+                "b": 68
+              },
+              "title": "LP-218 AJACCIO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 63,
+                "g": 87,
+                "b": 159
+              },
+              "title": "LP-219 TAVERNY"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 4,
+                "g": 69,
+                "b": 95
+              },
+              "title": "LP-220 GENEVA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 29,
+                "g": 50,
+                "b": 123
+              },
+              "title": "LP-221 BASEL"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 0,
+                "g": 65,
+                "b": 85
+              },
+              "title": "LP-222 ATHENS"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 29,
+                "g": 46,
+                "b": 63
+              },
+              "title": "LP-223 LIMASSOL"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 0,
+                "g": 69,
+                "b": 83
+              },
+              "title": "LP-248 SAN MARINO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 153,
+                "g": 215,
+                "b": 186
+              },
+              "title": "LP-249 COMO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 187,
+                "g": 223,
+                "b": 216
+              },
+              "title": "LP-250 TORINO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 97,
+                "g": 190,
+                "b": 188
+              },
+              "title": "LP-251 MILANO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 19,
+                "g": 169,
+                "b": 161
+              },
+              "title": "LP-252 BERGAMO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 0,
+                "g": 123,
+                "b": 119
+              },
+              "title": "LP-253 BRESCIA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 0,
+                "g": 81,
+                "b": 85
+              },
+              "title": "LP-254 VENEZIA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 0,
+                "g": 46,
+                "b": 40
+              },
+              "title": "LP-255 BOLZANO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 210,
+                "g": 232,
+                "b": 214
+              },
+              "title": "LP-256 PIACENZA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 154,
+                "g": 203,
+                "b": 158
+              },
+              "title": "LP-257 PARMA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 113,
+                "g": 178,
+                "b": 109
+              },
+              "title": "LP-258 MODENA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 67,
+                "g": 139,
+                "b": 81
+              },
+              "title": "LP-259 REGGIO EMILIA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 30,
+                "g": 81,
+                "b": 66
+              },
+              "title": "LP-260 BOLOGNA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 22,
+                "g": 59,
+                "b": 43
+              },
+              "title": "LP-261 FERRARA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 216,
+                "g": 223,
+                "b": 116
+              },
+              "title": "LP-262 LA SPEZIA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 193,
+                "g": 214,
+                "b": 120
+              },
+              "title": "LP-263 PISA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 182,
+                "g": 202,
+                "b": 112
+              },
+              "title": "LP-264 PRATO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 134,
+                "g": 181,
+                "b": 75
+              },
+              "title": "LP-265 LUCCA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 78,
+                "g": 152,
+                "b": 37
+              },
+              "title": "LP-266 FIRENZE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 99,
+                "g": 130,
+                "b": 52
+              },
+              "title": "LP-267 SIENA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 34,
+                "g": 74,
+                "b": 30
+              },
+              "title": "LP-268 LIVORNO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 24,
+                "g": 52,
+                "b": 25
+              },
+              "title": "LP-269 PERUGIA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 220,
+                "g": 227,
+                "b": 209
+              },
+              "title": "LP-270 SASSARI"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 191,
+                "g": 205,
+                "b": 178
+              },
+              "title": "LP-271 CAGLIARI"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 142,
+                "g": 158,
+                "b": 117
+              },
+              "title": "LP-272 MESSINA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 45,
+                "g": 72,
+                "b": 35
+              },
+              "title": "LP-273 CATANIA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 41,
+                "g": 52,
+                "b": 27
+              },
+              "title": "LP-274 PALERMO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 235,
+                "g": 232,
+                "b": 134
+              },
+              "title": "LP-275 ROMA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 229,
+                "g": 225,
+                "b": 76
+              },
+              "title": "LP-276 MORIMONDO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 218,
+                "g": 214,
+                "b": 39
+              },
+              "title": "LP-277 NAPOLI"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 185,
+                "g": 205,
+                "b": 40
+              },
+              "title": "LP-278 SALERNO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 159,
+                "g": 167,
+                "b": 45
+              },
+              "title": "LP-279 FOGGIA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 114,
+                "g": 95,
+                "b": 29
+              },
+              "title": "LP-280 BARI"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 83,
+                "g": 74,
+                "b": 25
+              },
+              "title": "LP-281 CATANZARO"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 192,
+                "g": 181,
+                "b": 97
+              },
+              "title": "LP-299 ISTANBUL"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 244,
+                "g": 237,
+                "b": 179
+              },
+              "title": "LP-300 ZAGREB"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 221,
+                "g": 212,
+                "b": 145
+              },
+              "title": "LP-301 BRATISLAVA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 203,
+                "g": 191,
+                "b": 92
+              },
+              "title": "LP-302 BUCAREST"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 170,
+                "g": 132,
+                "b": 19
+              },
+              "title": "LP-303 BUDAPEST"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 145,
+                "g": 112,
+                "b": 34
+              },
+              "title": "LP-304 PRAGA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 92,
+                "g": 72,
+                "b": 38
+              },
+              "title": "LP-305 BELGRADE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 246,
+                "g": 228,
+                "b": 194
+              },
+              "title": "LP-306 VIENNA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 221,
+                "g": 198,
+                "b": 158
+              },
+              "title": "LP-307 KREMS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 211,
+                "g": 169,
+                "b": 107
+              },
+              "title": "LP-308 LINZ"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 138,
+                "g": 86,
+                "b": 35
+              },
+              "title": "LP-309 WELS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 109,
+                "g": 75,
+                "b": 42
+              },
+              "title": "LP-310 SALZBURG"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 84,
+                "g": 59,
+                "b": 37
+              },
+              "title": "LP-311 GRAZ"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 43,
+                "g": 19,
+                "b": 7
+              },
+              "title": "LP-312 BADEN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 240,
+                "g": 208,
+                "b": 177
+              },
+              "title": "LP-313 BERLIN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 234,
+                "g": 167,
+                "b": 125
+              },
+              "title": "LP-314 HAMBURG"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 239,
+                "g": 163,
+                "b": 104
+              },
+              "title": "LP-315 BREMEN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 213,
+                "g": 97,
+                "b": 18
+              },
+              "title": "LP-316 HANNOVER"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 165,
+                "g": 85,
+                "b": 32
+              },
+              "title": "LP-317 DORTMUND"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 97,
+                "g": 59,
+                "b": 35
+              },
+              "title": "LP-318 HALLE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 248,
+                "g": 227,
+                "b": 204
+              },
+              "title": "LP-319 MUNCHEN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 212,
+                "g": 185,
+                "b": 156
+              },
+              "title": "LP-320 STUTTGART"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 172,
+                "g": 130,
+                "b": 93
+              },
+              "title": "LP-321 NURNBERG"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 123,
+                "g": 63,
+                "b": 44
+              },
+              "title": "LP-322 MAINZ"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 111,
+                "g": 70,
+                "b": 41
+              },
+              "title": "LP-323 FRANKFURT"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 119,
+                "g": 81,
+                "b": 53
+              },
+              "title": "LP-324 BONN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 65,
+                "g": 20,
+                "b": 18
+              },
+              "title": "LP-325 KOLN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 224,
+                "g": 101,
+                "b": 34
+              },
+              "title": "LP-326 LEIPZIG"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 181,
+                "g": 146,
+                "b": 83
+              },
+              "title": "LP-327 INNSBRUCK"
+            },
+            {
+              "color": {
+                "type": "RGB",
+                "r": 82,
+                "g": 42,
+                "b": 0
+              },
+              "title": "LP-328 DUESSELDORF"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 140,
+                "g": 91,
+                "b": 52
+              },
+              "title": "LP-329 BERN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 196,
+                "g": 118,
+                "b": 63
+              },
+              "title": "LP-330 ZÜRICH"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 236,
+                "g": 233,
+                "b": 225
+              },
+              "title": "LP-340 LOS ANGELES"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 204,
+                "g": 201,
+                "b": 193
+              },
+              "title": "LP-341 SAN DIEGO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 189,
+                "g": 185,
+                "b": 176
+              },
+              "title": "LP-342 SAN JOSE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 169,
+                "g": 165,
+                "b": 160
+              },
+              "title": "LP-343 SAN FRANCISCO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 126,
+                "g": 121,
+                "b": 112
+              },
+              "title": "LP-344 OAKLAND"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 90,
+                "g": 85,
+                "b": 81
+              },
+              "title": "LP-345 SACRAMENTO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 68,
+                "g": 67,
+                "b": 66
+              },
+              "title": "LP-346 LONG BEACH"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 229,
+                "g": 212,
+                "b": 197
+              },
+              "title": "LP-347 HOUSTON"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 209,
+                "g": 180,
+                "b": 162
+              },
+              "title": "LP-348 SAN ANTONIO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 159,
+                "g": 125,
+                "b": 116
+              },
+              "title": "LP-349 DALLAS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 95,
+                "g": 68,
+                "b": 68
+              },
+              "title": "LP-350 AUSTIN"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 64,
+                "g": 52,
+                "b": 57
+              },
+              "title": "LP-351 EL PASO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 215,
+                "g": 216,
+                "b": 215
+              },
+              "title": "LP-352 NEW YORK"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 194,
+                "g": 195,
+                "b": 201
+              },
+              "title": "LP-353 BOSTON"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 171,
+                "g": 170,
+                "b": 180
+              },
+              "title": "LP-354 CHICAGO"
+            },
+            
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 102,
+                "g": 97,
+                "b": 119
+              },
+              "title": "LP-355 PHILLY"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 58,
+                "g": 55,
+                "b": 64
+              },
+              "title": "LP-356 WASHINGTON"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 216,
+                "g": 213,
+                "b": 194
+              },
+              "title": "LP-357 MIAMI"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 184,
+                "g": 179,
+                "b": 158
+              },
+              "title": "LP-358 ORLANDO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 15,
+                "g": 147,
+                "b": 123
+              },
+              "title": "LP-359 TAMPA"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 118,
+                "g": 104,
+                "b": 92
+              },
+              "title": "LP-360 JACKSONVILLE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 86,
+                "g": 76,
+                "b": 66
+              },
+              "title": "LP-361 KEY WEST"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 56,
+                "g": 46,
+                "b": 44
+              },
+              "title": "LP-362 FORT MYERS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 216,
+                "g": 204,
+                "b": 193
+              },
+              "title": "LP-363 SEATTLE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 182,
+                "g": 161,
+                "b": 139
+              },
+              "title": "LP-364 PORTLAND"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 140,
+                "g": 116,
+                "b": 100
+              },
+              "title": "LP-365 LAS VEGAS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 100,
+                "g": 78,
+                "b": 65
+              },
+              "title": "LP-366 DETROIT"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 69,
+                "g": 53,
+                "b": 54
+              },
+              "title": "LP-367 BALTIMORE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 99,
+                "g": 79,
+                "b": 111
+              },
+              "title": "LP-368 INDIANAPOLIS"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 248,
+                "g": 200,
+                "b": 183
+              },
+              "title": "LP-370 MELBOURNE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 222,
+                "g": 170,
+                "b": 154
+              },
+              "title": "LP-371 SIDNEY"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 207,
+                "g": 150,
+                "b": 132
+              },
+              "title": "LP-372 BRISBANE"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 180,
+                "g": 133,
+                "b": 123
+              },
+              "title": "LP-373 CHRISTCHURCH"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 139,
+                "g": 85,
+                "b": 76
+              },
+              "title": "LP-374 WELLINGTON"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 255,
+                "g": 163,
+                "b": 139
+              },
+              "title": "LP-375 MOSCOW"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 255,
+                "g": 141,
+                "b": 109
+              },
+              "title": "LP-376 ST. PETERSBURG"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 255,
+                "g": 106,
+                "b": 57
+              },
+              "title": "LP-377 KRASNODAR"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 137,
+                "g": 194,
+                "b": 117
+              },
+              "title": "LP-378 DUBAI"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 22,
+                "g": 82,
+                "b": 161
+              },
+              "title": "LP-379 SAO PAOLO"
+            },
+            {
+              "color": {
+                "type": "RGB",                
+                "r": 234,
+                "g": 72,
+                "b": 144
+              },
+              "title": "LP-380 SANTIAGO"
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+</div>                  </div>
+  </section>
+</article>
+      </main>
+
+      <script src="assets/builds/bundle.js"></script>
+</body>
+</html>
